@@ -1,0 +1,41 @@
+{
+  "name": "pet-adoption-backend",
+  "version": "1.0.0",
+  "description": "Backend for Virtual Pet Adoption Center",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "pet",
+    "adoption",
+    "backend"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.41.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.2.1",
+    "multer": "^1.4.5-lts.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "mongodb-memory-server": "^9.0.1",
+    "nodemon": "^3.0.3",
+    "supertest": "^6.3.3"
+  },
+  "jest": {
+    "transform": {},
+    "testEnvironment": "node"
+  }
+}
